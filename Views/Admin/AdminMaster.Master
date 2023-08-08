@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="OnlineSchoolTuto1.Views.Admin.AdminMaster" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../../Assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        * {
+            font-family: Poppins;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="height:695px;">
+            <div class="col-md-2" style="background-color: crimson;">
+                <div class="row mb-5">
+                    <div class="col-md-3">
+                        <img src="../../Assets/Images/department_48px.png" />
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <label class="text-white h5 text-center">School MS</label>
+                        <! School MS başlık kodu >
+                    </div>
+                </div>
+                <div class="mb-5 mt-5">
+                </div>
+                <div class="row mb-2 mt-5">
+                    <div class="col-md-3">
+                        <img src="../../Assets/Images/class_52px.png" />
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <label class="text-white h6">Dashboard</label>
+                        <! Dashboard başlık kodu >
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                        <img src="../../Assets/Images/training_64px.png" />
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <a href="Teachers.aspx">
+                            <label class="text-white h6">Teachers</label></a>  <! Teacher başlık kodu >
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                        <img src="../../Assets/Images/student_male_52px.png" />
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <a href="Students.aspx">
+                            <label class="text-white h6">Students</label>
+                        </a> <%--<! Student başlık kodu >--%>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                        <img src="../../Assets/Images/report_card_48px.png" />
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <a href="Marks.aspx">
+                            <label class="text-white h6">Marks</label>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                        <img src="../../Assets/Images/preschool_100px.png" style="height: 50px; width: 50px" />
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <a href="Schedules.aspx">
+                            <label class="text-white h6">Schedules</label>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-3">
+                        <img src="../../Assets/Images/department_48px.png" />
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <a href="Departments.aspx">
+                            <label class="text-white h6">Departments</label>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-5" style="height: 60px">
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <img src="../../Assets/Images/Logout_60px.png" />
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <a href="../Login.aspx">
+                            <label class="text-white h6">Logout</label></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
